@@ -20,6 +20,12 @@ Install it from PyPI:
 pip install smartup
 ```
 
+And keep updated:
+
+```bash
+pip install --upgrade smartup
+```
+
 ## Configuration
 
 Once installed, set up the `SMARTUP_SERVER_URL` environment variable which points to your SmartUp server URL.
