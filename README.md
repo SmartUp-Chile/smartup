@@ -26,13 +26,33 @@ And keep updated:
 pip install --upgrade smartup
 ```
 
-## Configuration
+### Configuration
 
-Once installed, set up the `SMARTUP_SERVER_URL` environment variable which points to your SmartUp server URL.
+Once installed, set up the `SMARTUP_SERVER_URL` environment variable which points to your SmartUp server URL. You can set up temporarily the server url like this on MacOS/Linux:
+
+```bash
+export SMARTUP_SERVER_URL="https://yourapifromsmartup.dev"
+```
 
 ## Usage
 
-This section will be updated soon.
+You can checkout [hello_world.py](hello_world.py) for a functional example that you can run.
+
+### Chat with an agent
+
+It's very easy to chat with an agent. Based on previous messages, you can chat with an agent.
+
+```python
+response = SmartUp.chat.create(
+    agent_name="moishele",
+    messages=[{
+        "role": "user",
+        "content": "Hola Moishele, ¿cómo estás?"
+    }]
+)
+
+print(response) # "¡Shalom y un montón de alegrías para ti! Estoy tan bien como un bagel en un brunch dominical 😄."
+```
 
 ## Features
 
